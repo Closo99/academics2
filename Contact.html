@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Contact</title>
     
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -24,27 +24,92 @@
                 <text>Medical Center</text>
             </header>
 
-            <main class="content">
-                Content
+            <main class="content-contact">
+                <section class="content-contact-child1">
+                    <h1>Contact</h1>
+                    <text><small>We appreciate your contact,<br>please fill the form down below.</small></text>
+                </section>
+
+                <form class="content-contact-form">
+                    <fieldset class="fieldset">
+                        <div>
+                            <text>I need</text><br>
+                            <input type="radio" name="option" value="appointment">An appointment
+                            <input type="radio" name="option" value="other">Other option
+                        </div>
+
+                        <div>
+                            <span for="name">Name:</span><br>
+                            <input class="name" type="text" name="name" id="name" required>
+                        </div>
+
+                        <div>
+                            <span for="lastname">Lastname:</span><br>
+                            <input class="lastname" type="text" name="lastname" id="lastname" required>
+                        </div>
+
+                        <div>
+                            <span for="email">Email:</span><br>
+                            <input class="email" type="email" name="email" id="email" required>
+                        </div>
+
+                        <div>
+                            <span for="date">Birth date:</span><br>
+                            <input class="date" type="date" name="date" id="email" required>
+                        </div>
+
+                        <div>
+                            <label for="medical-specialties">Medical Specialties</label><br>
+                            <select class="select" name="medical-specialties" id="medical-specialties">
+                                <option selected disabled value="">Choose an option</option>
+                                <option value="Allergy and Immunology">Allergy and Immunology</option>
+                                <option value="Dermatology">Dermatology</option>
+                                <option value="Diagnostic radiology">Diagnostic radiology</option>
+                                <option value="General">General</option>
+                                <option value="Neurology">Neurology</option>
+                                <option value="Pedriatrics">Pedriatrics</option>
+                            </select>
+                        </div>                        
+                    </fieldset>                    
+                </form>
+                
+                <div>
+                    <label>Request description:</label><br>
+                    <textarea class="textarea" name="description" id="description" rows="10"></textarea>
+                </div>
+
+                <button class="submitbutton" type="submit">Submit!</button>
             </main>
 
             <footer class="footer">
                 <div class="footer-tittles">
-                    <p><b>Follow Medical Center</b></p>
-                </div>
-
-                <div class="footer-icons">
-                    <a href="https://twitter.com/Twitter"><img src="img/whitetwittericon.png" alt="twitter icon" width="10"></a>
-                    <a href="https://www.instagram.com/instagram/"><img src="img/whiteinstagramicon.png" alt="instagram icon" width="10"></a>
-                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="img/whitefacebookicon.png" alt="facebook icon" width="10"></a>
+                    <p><b>Localization</b></p>
+                    <div>                        
+                        <text>9999 Somewhere Avenue, Executive Offices</text>                        
+                    </div>
+                    <div>
+                        <text>Houston, XX 33333</text>
+                    </div>
+                    <div class="footer-icons-localization">
+                        <a href="https://goo.gl/maps/6Latr8ECFxcqifUk8"><img src="img/localizationicon.png" alt="localization icon" width="10"></a>
+                    </div>
                 </div>
 
                 <div class="footer-tittles">
-                    <p><b>Localization</b></p>
+                    <p><b>Follow Medical Center</b></p>
+                    <div class="footer-icons-socialmedia">
+                        <a href="https://twitter.com/Twitter"><img src="img/whitetwittericon.png" alt="twitter icon" width="10"></a>
+                        <a href="https://www.instagram.com/instagram/"><img src="img/whiteinstagramicon.png" alt="instagram icon" width="10"></a>
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="img/whitefacebookicon.png" alt="facebook icon" width="10"></a>
+                    </div>
                 </div>
-                <div class="footer-icons">
-                    <a href="https://goo.gl/maps/6Latr8ECFxcqifUk8"><img src="img/localizationicon.png" alt="localization icon" width="10"></a>
-                </div>
+
+                <div class="footer-tittles">
+                    <p><b>Contact</b></p>
+                    <div class="footer-icons">
+                        <a href="Contact.html"><img src="img/whiteemailicon.png" alt="localization icon" width="10"></a>
+                    </div>
+                </div>                              
             </footer>
         </div>
     </div>
